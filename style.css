@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc; /* Сплошной бежевый фон */
+    color: #333; /* Цвет текста по умолчанию */
+}
+
+.sidebar {
+    width: 200px;
+    height: 100vh; /* Высота боковой панели на всю высоту экрана */
+    background-color: #e8f5e9; /* Светло-зелёный фон для боковой панели */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Лёгкая тень для боковой панели */
+    position: fixed; /* Фиксированное положение боковой панели */
+}
+
+.sidebar h2 {
+    background-color: #c8e6c9; /* Светло-зелёный фон для заголовка боковой панели */
+    padding: 10px;
+    border-radius: 5px; /* Закруглённые углы */
+    text-align: center; /* Центрирование текста */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #388e3c; /* Темно-зелёный цвет ссылок */
+    padding: 10px;
+    display: block; /* Сделаем ссылки блочными для удобства клика */
+    border-radius: 5px; /* Закруглённые углы */
+    transition: background-color 0.3s; /* Плавный переход цвета фона при наведении */
+}
+
+.sidebar ul li a:hover {
+    background-color: #a5d6a7; /* Цвет фона при наведении на ссылку */
+}
+
+.content {
+    margin-left: 220px; /* Отступ для содержимого, чтобы не перекрывать боковую панель */
+    padding: 20px;
+}
+
+.content h1 {
+    color: #388e3c; /* Темно-зелёный цвет заголовка контента */
+    border-bottom: 2px solid #4caf50; /* Подчёркивание заголовка */
+    padding-bottom: 10px; /* Отступ под заголовком */
+}
+/* Существующий CSS код... */
+
+.thumbnail {
+    width: 250px; /* Увеличиваем размер миниатюры */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    cursor: pointer; /* Курсор в виде указателя при наведении */
+}
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Фиксированное положение */
+    z-index: 1000; /* На переднем плане */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Прокрутка при необходимости */
+    background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный фон */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%; /* Уменьшаем максимальную ширину изображения в модальном окне */
+    max-height: 80%; /* Уменьшаем максимальную высоту изображения в модальном окне */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer; /* Курсор в виде указателя */
+}
+
